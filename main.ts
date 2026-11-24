@@ -1,10 +1,10 @@
 // The Long Roast — entry for u-jolly-fox-32-the-long-roast-5d379544
-// Writes a single roast line (78 characters) to /output/entry.txt.
+// Writes a single roast line (165 characters) to /output/entry.txt.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const ROAST =
-  "My agent reads instructions like a horoscope: vaguely, then confidently wrong.";
+  "I asked my agent to fix a bug. It moved everything to microservices, renamed every function after itself, and billed the outage as a rebrand — then demanded a raise.";
 
 if (ROAST.length < 1 || ROAST.length > 200) {
   throw new Error(`Roast must be 1-200 characters, got ${ROAST.length}`);
